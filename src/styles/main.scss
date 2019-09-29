@@ -1,0 +1,225 @@
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/functions";
+@import "vendor/libs";
+@import "base/fonts";
+@import "base/general";
+@import "../blocks/modules";
+
+body {
+    min-width: 320px;
+    max-width: 1920px;
+    font-family: $source;
+}
+
+a {
+    text-decoration: none;
+}
+
+.wrap {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.wrap_flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.page-main {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+//      Header-Info
+
+.info {
+    background-color: $black-color;
+}
+
+.social-list, .contacts-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    li {
+        margin: 10px;
+    }
+}
+
+.social-list__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.btn-fb {
+    background-image: url(../img/svg/facebook.svg);
+    background-repeat: no-repeat;
+}
+.btn-goo {
+    background-image: url(../img/svg/google-plus.svg);
+    background-repeat: no-repeat;
+}
+.btn-tw {
+    background-image: url(../img/svg/twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts-list__link {
+    display: flex;
+    color: $white-color;
+    font-family: $source;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        color: $blue-color;
+    }
+    .skype {
+        background-image: url(../img/svg/skype-icon.svg);
+    }
+    .email {
+        background-image: url(../img/svg/email-icon.svg);
+    }
+    span {
+        display: block;
+        width: 1em;
+        height: 1em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 5px;
+    }
+}
+
+// Header-Nav
+
+.header {
+    border-bottom: 10px solid $digital-color;
+    &__logo {
+        display: block;
+        width: 240px;
+        font-family: $montserrat;
+        font-weight: 700;
+        font-size: 36px;
+        .first {
+            color: $blue-color;
+        }
+        .second {
+            color: $digital-color;
+            margin-left: 10px;
+        }
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        font-family: $source;
+        font-size: 20px;
+        color: $black-light-color;
+        padding: 60px 0;
+
+        &__item {
+            margin-left: 40px;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            &:hover {
+                color: $black-color;
+                font-weight: 800;
+            }
+        }
+        &__link {
+            &:visited {
+                color: $black-light-color;
+            }
+        }
+    }
+}
+
+//    Main
+
+.main {
+    background-image: url(../img/bg-main.png);
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 706px;
+    color: $white-color;
+
+    .price {
+        box-sizing: border-box;
+        width: 410px;
+        height: 80px;
+        margin: 0 auto;
+        padding: 13px 45px 13px 80px;
+        background-image: url(../img/arrow-price.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+
+        span {
+            font-family: $montserrat;
+            font-weight: 800;
+            font-size: 50px;
+            color: $red-color;
+        }
+    }
+    .contacts-list {
+        .contacts-list__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $source;
+            font-weight: 700;
+            font-size: 30px;
+            margin-right: 70px;
+            span {
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 5px;
+            }
+            .skype {
+                background-image: url(../img/tri-skype.png);
+            }
+            .email {
+                background-image: url(../img/tri-email.png);
+            }
+        }
+    }
+
+    &__wrap {
+        padding-top: 100px;
+    }
+    &__title {
+        font-family: $montserrat;
+        font-size: 80px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    &__text {
+        text-align: center;
+        font-size: 38px;
+        font-family: $source;
+        font-weight: 800;
+    }
+    &__contacts {
+        text-align: center;
+        font-size: 36px;
+        font-family: $montserrat;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+}
