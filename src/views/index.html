@@ -25,7 +25,6 @@
         <link rel="apple-touch-icon" sizes="1024x1024" href="../img/favicons/apple-touch-icon-1024x1024.png">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:700,800&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap" rel="stylesheet">
-
         <link rel="stylesheet" href="../styles/main.css">
     </head>
     <body>
@@ -47,36 +46,44 @@
                             </ul>
                         </div>
                     </section>
-                    <section class="header">
+                    <section class="nav">
                         <div class="wrap wrap_flex">
-                            <a href="" class="header__logo"><span class="first">New</span><span class="second">Digital</span></a>
-                            <ul class="header-list">
-                                <li class="header-list__item">
-                                    <a href="" class="header-list__link">Home</a>
+                            <a href="#home" class="nav__logo"><span class="first">New</span><span class="second">Digital</span></a>
+                            <ul class="nav-list">
+                                <li class="nav-list__item">
+                                    <a href="#home" class="nav-list__link">Home</a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="" class="header-list__link">About Us</a>
+                                <li class="nav-list__item">
+                                    <a href="#about_us" class="nav-list__link">About Us</a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="" class="header-list__link">Why Us?</a>
+                                <li class="nav-list__item">
+                                    <a href="#why_us" class="nav-list__link">Why Us?</a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="" class="header-list__link">FAQ</a>
+                                <li class="nav-list__item">
+                                    <a href="#faq" class="nav-list__link">FAQ</a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="" class="header-list__link">Post Now</a>
+                                <li class="nav-list__item">
+                                    <a href="#post_now" class="nav-list__link">Post Now</a>
                                 </li>
-                                <li class="header-list__item">
-                                    <a href="" class="header-list__link">Blog</a>
+                                <li class="nav-list__item">
+                                    <a href="#" class="nav-list__link">Blog</a>
                                 </li>
                             </ul>
+                            <button class="btn-menu" type="button">
+                                <?xml version="1.0" encoding="UTF-8"?>
+                                <svg enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="m491.32 235.32h-470.64c-11.422 0-20.682 9.259-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682z"/>
+                                        <path d="m491.32 78.439h-470.64c-11.422 0-20.682 9.26-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.26 20.682-20.682s-9.259-20.682-20.682-20.682z"/>
+                                        <path d="m491.32 392.2h-470.64c-11.422 0-20.682 9.259-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z"/>
+                                </svg>
+                            </button>
                         </div>
                     </section>
                 </header>
 
             <!-- Main -->
 
-                <section class="main">
+                <section class="main" id="home">
                     <div class="wrap main__wrap">
                         <h1 class="main__title">
                             Feature Posts
@@ -97,78 +104,80 @@
 
             <!-- About Us -->
 
-            <section class="about">
+            <section class="about" id="about_us">
                 <div class="wrap">
-                    <h2 class="about__title"></h2>
+                    <h2 class="about__title title-h2">About Us</h2>
                     <div class="about__info">
-                        <div class="about__img"><img width="626px" height="448" src="../img/marketing.jpg" alt="scheme_SEO"></div>
-                        <div class="about__list-info">
-                            <ul class="list-info">
-                                <li class="list-info__item">
-                                        We place feature articles for clients on news and niche relevant blog sites. Articles can contain interviews with you or  news where you or your company is the source throughout the post. 
-                                </li>
-                                <li class="list-info__item">
-                                        We can also arrange product or service promotion within the post on certain platforms. All sites are authority sites and importantly are SEM  Rush checked 
-                                        for real traffic as well as DA and Trust Flow.
-                                </li>
-                                <li class="list-info__item">
-                                        We make sure that you get branded links to your site that are do follow for SEO value. If any sites do not allow features  we have arrangements to get a quote and a link as a minimum for our clients. This way you are still able to garner the authority of being a contributor to a niche relevant article. This will always be advised pre order.
-                                </li>
-                            </ul>
-                        </div>
+                        <div class="about__img"></div>
+                        <ul class="list-info" id="why_us">
+                            <li class="list-info__item ">
+                                   <span class="item-1"></span><p>We place feature articles for clients on news and niche relevant blog sites. Articles can contain interviews with you or  news where you or your company is the source throughout the post.</p> 
+                            </li>
+                            <li class="list-info__item">
+                                <span class="item-2"></span><p> We can also arrange product or service promotion within the post on certain platforms. All sites are authority sites and importantly are SEM  Rush checked 
+                                    for real traffic as well as DA and Trust Flow.</p>
+                            </li>
+                            <li class="list-info__item">
+                                <span class="item-3"></span><p> We make sure that you get branded links to your site that are do follow for SEO value. If any sites do not allow features  we have arrangements to get a quote and a link as a minimum for our clients. This way you are still able to garner the authority of being a contributor to a niche relevant article. This will always be advised pre order.</p>
+                            </li>
+                        </ul>
                     </div>
-                    <a href="" class="about__link">Get a Feature Post</a>
+                    <a href="#" class="about__link">Get a Feature Post</a>
                 </div>
             </section>
 
             <!-- Post Start -->
 
-            <section class="posts">
+            <section class="posts" id="post_now">
                 <div class="wrap">
-                    <h2 class="posts__title">Posts Start From Only $250</h2>
+                    <h2 class="posts__title title-h2">Posts Start From <span>Only $250</span></h2>
                     <ul class="price-list">
-                        <li class="price-list__item"><span></span>Content Is Included In  The Price</li>
-                        <li class="price-list__item"><span></span>Payments made up front through  PayPal toprotect both parties. </li>
-                        <li class="price-list__item"><span></span>Infographics or Designed Images Graphics Are Extra,  CAN BE Arr</li>
-                        <li class="price-list__item"><span></span>Discounts are available for bulk  orders and regular clients. T</li>
+                        <li class="price-list__item"><span class="item-img1"></span>Content Is Included In  The Price</li>
+                        <li class="price-list__item"><span class="item-img2"></span>Payments made up front through</li>
+                        <li class="price-list__item"><span class="item-img3"></span>Infographics or Designed Images Graphics Are Extra,  CAN BE Arranged At The Time Of Ordering</li>
+                        <li class="price-list__item"><span class="item-img4"></span>Discounts are available for bulk orders and regular clients. These can be discussed during the ordering process</li>
                     </ul>
                 </div>
             </section>
 
             <!-- Contact Us -->
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrap">
-                <h2 class="contact__title">Contact Us</h2>
+                <h2 class="contact__title title-h2">Contact Us</h2>
                 <ul class="contact-list">
-                    <li class="contact-list__item"><span><a href="" class="item__link"></a></span>Kami House, 122 - 161  City Road, Bristol United  Kingdom, EC3V</li>
-                    <li class="contact-list__item"><span><a href="" class="item__link"></a></span>info@personalmail.com</li>
-                    <li class="contact-list__item"><span><a href="" class="item__link"></a></span>personalskype</li>
+                    <li class="contact-list__item"><a href="#" class="item__link"><span class="place"></span>Kami House, 122 - 161  City Road, Bristol United  Kingdom, EC3V</a></li>
+                    <li class="contact-list__item"><a href="#" class="item__link"><span class="email"></span>info@personalmail.com</a></li>
+                    <li class="contact-list__item"><a href="#" class="item__link"><span class="skype"></span>personalskype</a></li>
                 </ul>
             </div>
         </section>
 
             <!-- FAQ -->
 
-        <section class="faq">
+        <section class="faq" id="faq">
             <div class="wrap">
-                <h2 class="faq__title">FAQ</h2>
+                <h2 class="faq__title title-h2">FAQ</h2>
                 <ul class="questions-list">
                     <li class="questions-list__item">
-                        <div class="qestion">Can I use my own content?</div>
-                        <div class="answer">1.In short – YES. They often contain branded links and any link i</div>
+                        <div class="qestion">Can I use my own content? <span></span></div>
+                        <div class="answer">1.In short – YES. They often contain branded links and any link is surrounded by incredibly 
+                            relevant content.</div>
                     </li>
                     <li class="questions-list__item">
-                        <div class="qestion">Are feature guest posts any good for SEO?</div>
-                        <div class="answer">2.In short – YES. They often contain branded links and any link i</div>
+                        <div class="qestion">Are feature guest posts any good for SEO? <span></span></div>
+                        <div class="answer">2.IIn short – YES. They often contain branded links and any link is surrounded by incredibly 
+                            relevant content.</div>
                     </li>
                     <li class="questions-list__item">
-                        <div class="qestion">Can these pages rank for keywords themselves?</div>
-                        <div class="answer">3.In short – YES. They often contain branded links and any link i</div>
+                        <div class="qestion">Can these pages rank for keywords themselves? <span></span></div>
+                        <div class="answer">3.In short – YES. They often contain branded links and any link is surrounded by incredibly 
+                            relevant content.</div>
                     </li>
                     <li class="questions-list__item">
-                        <div class="qestion">Can I manipulate titles of posts to carry specific  keywords of</div>
-                        <div class="answer">4.In short – YES. They often contain branded links and any link i</div>
+                        <div class="qestion">Can I manipulate titles of posts to carry specific  keywords of <span></span></div>
+                        <div class="answer">4.In short – YES. They often contain branded links and any link is surrounded by incredibly 
+                            relevant content.</div>
                     </li>
                 </ul>
             </div>
@@ -178,41 +187,73 @@
 
         <footer>
             <section class="footer">
-                <div class="wrap">
-                    <a href="" class="header__logo">New Digital</a>
-                    <ul class="header-list">
-                        <li class="header-list__item active">
-                            <a href="" class="header-list__link">Home</a>
+                <div class="wrap wrap_flex">
+                    <a href="#home" class="nav__logo">New Digital</a>
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="#home" class="nav-list__link">Home</a>
                         </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link">About Us</a>
+                        <li class="nav-list__item">
+                            <a href="#about_us" class="nav-list__link">About Us</a>
                         </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link">Why Us?</a>
+                        <li class="nav-list__item">
+                            <a href="#why_us" class="nav-list__link">Why Us?</a>
                         </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link">FAQ</a>
+                        <li class="nav-list__item">
+                            <a href="#faq" class="nav-list__link">FAQ</a>
                         </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link">Post Now</a>
-                        </li>
-                        <li class="header-list__item">
-                            <a href="" class="header-list__link">Blog</a>
+                        <li class="nav-list__item">
+                            <a href="#post_now" class="nav-list__link">Post Now</a>
                         </li>
                     </ul>
                     <div class="footer__social">
                         <ul class="social-list">
-                            <li class="social-list__item"><a href="" class="social-list__link"></a></li>
-                            <li class="social-list__item"><a href="" class="social-list__link"></a></li>
-                            <li class="social-list__item"><a href="" class="social-list__link"></a></li>
+                            <li class="social-list__item"><a href="" class="social-list__link footer-fb" target="_blank"></a></li>
+                            <li class="social-list__item"><a href="" class="social-list__link footer-goo" target="_blank"></a></li>
+                            <li class="social-list__item"><a href="" class="social-list__link footer-tw" target="_blank"></a></li>
                         </ul>
                     </div>
                 </div>
             </section>
         </footer>
+        <div class="modal">
+                <button class="btn-close" type="button"><span>&times;</span></button>
+                <ul class="nav-modal">
+                    <li><a href="#home" class="nav-item">Home</a></li>
+                    <li><a href="#about_us" class="nav-item">About Us</a></li>
+                    <li><a href="#why_us" class="nav-item">Why Us?</a></li>
+                    <li><a href="#faq" class="nav-item">FAQ</a></li>
+                    <li><a href="#post_now" class="nav-item">Post now</a></li>
+                    <li><a href="#" class="nav-item">Blog</a></li>
+                </ul>
+            </div>
                 
        
         <script src="../js/main.js"></script>
         <script src="../js/vendor.js"></script>
+        <script>
+            const questions = document.getElementsByClassName('qestion');
+            for (let i = 0; i < questions.length; i++){
+                questions[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    this.lastChild.classList.toggle("arrow");
+                    let answer = this.nextElementSibling;
+                    if (answer.style.display === "block") {
+                        answer.style.display = "none";
+                        } else {
+                            answer.style.display = "block";
+                        };
+                    });
+                };
+                const btnMenu = document.querySelector('.btn-menu');
+                const btnClose = document.querySelector('.btn-close');
+                const modalWindow = document.querySelector('.modal');
+                btnMenu.onclick = function() {
+                    modalWindow.classList.add("visible");
+            };
+                btnClose.onclick = function() {
+                    modalWindow.classList.remove("visible");
+            };
+        </script>
     </body>
 </html>
