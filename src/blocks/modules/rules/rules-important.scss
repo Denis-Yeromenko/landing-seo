@@ -1,0 +1,12 @@
+.visible {
+    display: block;
+}
+
+.active {
+    color: $blue-color;
+    border-bottom: none !important;
+}
+
+.arrow {
+    background-image: url(../img/arrow-up.png) !important;
+}

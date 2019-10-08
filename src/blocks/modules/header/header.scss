@@ -1,0 +1,123 @@
+//      ---------- Header-Info ----------
+
+.info {
+    background-color: $black-color;
+    .wrap {
+        @media (max-width: 570px) {
+            flex-direction: column;
+        }
+    }
+}
+
+.social-list, .contacts-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+    li {
+        margin: 10px;
+    }
+}
+
+.social-list__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    border-radius: 100%;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.btn-fb {
+    background-image: url(../img/svg/facebook.svg);
+    background-repeat: no-repeat;
+}
+.btn-goo {
+    background-image: url(../img/svg/google-plus.svg);
+    background-repeat: no-repeat;
+}
+.btn-tw {
+    background-image: url(../img/svg/twitter.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts-list__link {
+    display: flex;
+    color: $white-color;
+    font-family: $source;
+    font-size: 17px;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+        opacity: 0.5;
+    }
+    .skype {
+        background-image: url(../img/svg/skype-icon.svg);
+    }
+    .email {
+        background-image: url(../img/svg/email-icon.svg);
+    }
+    span {
+        display: block;
+        width: 1em;
+        height: 1em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-right: 5px;
+    }
+}
+
+// ---------- Header - Nav ----------
+
+.nav {
+    border-bottom: 10px solid $digital-color;
+    @media (max-width: 900px) {
+        padding: 30px 0;
+    }
+    &__logo {
+        display: block;
+        width: 240px;
+        font-family: $montserrat;
+        font-weight: 700;
+        font-size: 36px;
+        .first {
+            color: $blue-color;
+        }
+        .second {
+            color: $digital-color;
+            margin-left: 10px;
+        }
+    }
+    &-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: flex-end;
+        font-family: $source;
+        font-size: 20px;
+        color: $black-light-color;
+        padding: 60px 0;
+        @media (max-width: 900px) {
+            display: none;
+        }
+
+        &__item {
+            margin-left: 40px;
+            padding-bottom: 5px;
+            transition: 0.3s;
+            &:hover {
+                color: $black-color;
+                font-weight: 800;
+            }
+        }
+        &__link {
+            &:visited {
+                color: $black-light-color;
+            }
+        }
+    }
+}

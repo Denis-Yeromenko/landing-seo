@@ -1,0 +1,114 @@
+//    ---------- Main ----------
+
+.main {
+    background-image: url(../img/bg-main.png);
+    background-repeat: no-repeat;
+    max-width: 1920px;
+    height: 706px;
+    color: $white-color;
+    @media (max-width: 800px) {
+        height: 546px;
+    }
+    @media (max-width: 450px) {
+        height: 646px;
+    }
+
+    .price {
+        box-sizing: border-box;
+        width: 410px;
+        height: 80px;
+        margin: 0 auto;
+        padding: 13px 45px 13px 80px;
+        background-image: url(../img/arrow-price.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        @media (max-width: 900px) {
+            width: 205px;
+            height: 40px;
+            padding: 7px 22px 7px 40px;
+        }
+        span {
+            font-family: $montserrat;
+            font-weight: 800;
+            font-size: 50px;
+            color: $red-color;
+            @media (max-width: 900px) {
+                font-size: 24px;
+            }
+        }
+    }
+    .contacts-list {
+        @media (max-width: 900px) {
+            flex-direction: column;
+        }
+        .contacts-list__link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: $source;
+            font-weight: 700;
+            font-size: 30px;
+            margin-right: 70px;
+            @media (max-width: 900px) {
+                font-size: 16px;
+            }
+
+            .skype {
+                background-image: url(../img/tri-skype.png);
+            }
+            .email {
+                background-image: url(../img/tri-email.png);
+            }
+            span {
+                display: block;
+                width: 80px;
+                height: 80px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-right: 5px;
+                @media (max-width: 900px) {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+
+    &__wrap {
+        padding-top: 100px;
+        @media (max-width: 900px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    &__title {
+        font-family: $montserrat;
+        font-size: 80px;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 25px;
+        @media (max-width: 800px) {
+            font-size: 40px;
+        }
+    }
+    &__text {
+        text-align: center;
+        font-size: 38px;
+        font-family: $source;
+        font-weight: 800;
+        @media (max-width: 800px) {
+            font-size: 20px;
+        }
+    }
+    &__contacts {
+        text-align: center;
+        font-size: 36px;
+        font-family: $montserrat;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+}

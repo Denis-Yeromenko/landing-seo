@@ -1,0 +1,86 @@
+// ---------- Contact Us ----------
+
+.contact {
+    color: $white-color;
+    background-image: url(../img/contuct-bg.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 100px;
+    @media (max-width: 800px) {
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+    .contact__title {
+        @media (max-width: 800px) {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+    }
+    .contact-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 30px;
+        @media (max-width: 1100px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            // flex-basis: 23%;
+            font-size: 19px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.5;
+            @media (max-width: 800px) {
+                margin-bottom: 50px;
+            }
+            .item__link {
+                color: $white-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 17px;
+                text-decoration: none;
+                transition: 0.3s;
+                @media (max-width: 800px) {
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                &:hover {
+                    opacity: 0.5;
+                }
+                .skype {
+                    width: 90px;
+                    height: 84px;
+                    background-image: url(../img/tri-skype.png);
+                }
+                .email {
+                    width: 90px;
+                    height: 94px;
+                    background-image: url(../img/tri-email.png);
+                }
+                .place {
+                    width: 90px;
+                    height: 94px;
+                    background-image: url(../img/marker.png);
+                }
+                span {
+                    display: block;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-right: 5px;
+                    @media (max-width: 800px) {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -66,7 +66,7 @@
                                     <a href="#post_now" class="nav-list__link">Post Now</a>
                                 </li>
                                 <li class="nav-list__item">
-                                    <a href="#" class="nav-list__link">Blog</a>
+                                    <a href="#" target="_blank" class="nav-list__link" >Blog</a>
                                 </li>
                             </ul>
                             <button class="btn-menu" type="button">
@@ -160,22 +160,22 @@
                 <h2 class="faq__title title-h2">FAQ</h2>
                 <ul class="questions-list">
                     <li class="questions-list__item">
-                        <div class="qestion">Can I use my own content? <span></span></div>
+                        <div class="qestion"><p>Can I use my own content?</p><span></span></div>
                         <div class="answer">1.In short – YES. They often contain branded links and any link is surrounded by incredibly 
                             relevant content.</div>
                     </li>
                     <li class="questions-list__item">
-                        <div class="qestion">Are feature guest posts any good for SEO? <span></span></div>
+                        <div class="qestion"><p>Are feature guest posts any good for SEO? </p><span></span></div>
                         <div class="answer">2.IIn short – YES. They often contain branded links and any link is surrounded by incredibly 
                             relevant content.</div>
                     </li>
                     <li class="questions-list__item">
-                        <div class="qestion">Can these pages rank for keywords themselves? <span></span></div>
+                        <div class="qestion"><p>Can these pages rank for keywords themselves?</p><span></span></div>
                         <div class="answer">3.In short – YES. They often contain branded links and any link is surrounded by incredibly 
                             relevant content.</div>
                     </li>
                     <li class="questions-list__item">
-                        <div class="qestion">Can I manipulate titles of posts to carry specific  keywords of <span></span></div>
+                        <div class="qestion"><p>Can I manipulate titles of posts to carry specific  keywords of </p><span></span></div>
                         <div class="answer">4.In short – YES. They often contain branded links and any link is surrounded by incredibly 
                             relevant content.</div>
                     </li>
@@ -216,6 +216,9 @@
                 </div>
             </section>
         </footer>
+
+         <!-- Modal -->
+
         <div class="modal">
                 <button class="btn-close" type="button"><span>&times;</span></button>
                 <ul class="nav-modal">
@@ -231,29 +234,6 @@
        
         <script src="../js/main.js"></script>
         <script src="../js/vendor.js"></script>
-        <script>
-            const questions = document.getElementsByClassName('qestion');
-            for (let i = 0; i < questions.length; i++){
-                questions[i].addEventListener("click", function () {
-                    this.classList.toggle("active");
-                    this.lastChild.classList.toggle("arrow");
-                    let answer = this.nextElementSibling;
-                    if (answer.style.display === "block") {
-                        answer.style.display = "none";
-                        } else {
-                            answer.style.display = "block";
-                        };
-                    });
-                };
-                const btnMenu = document.querySelector('.btn-menu');
-                const btnClose = document.querySelector('.btn-close');
-                const modalWindow = document.querySelector('.modal');
-                btnMenu.onclick = function() {
-                    modalWindow.classList.add("visible");
-            };
-                btnClose.onclick = function() {
-                    modalWindow.classList.remove("visible");
-            };
-        </script>
+        
     </body>
 </html>

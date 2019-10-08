@@ -1,0 +1,67 @@
+// ---------- Post Now ----------
+
+.posts {
+    color: $black-light-color;
+    margin-top: 115px;
+    @media (max-width: 800px) {
+        margin-top: 80px;
+    }
+    .posts__title {
+        span {
+            color: $red-color;
+        }
+    }
+    .price-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        list-style-type: none;
+        padding-left: 0;
+        margin-top: 76px;
+        @media (max-width: 800px) {
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 36px;
+        }
+        &__item {
+            flex-basis: 23%;
+            font-size: 19px;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.5;
+            @media (max-width: 800px) {
+                margin-bottom: 30px;
+            }
+            .item-img1 {
+                width: 104px;
+                height: 105px;
+                background-image: url(../img/content.png);
+            }
+            .item-img2 {
+                width: 121px;
+                height: 117px;
+                background-image: url(../img/pay.png);
+            }
+            .item-img3 {
+                width: 98px;
+                height: 119px;
+                background-image: url(../img/infografic.png);
+            }
+            .item-img4 {
+                display: block;
+                width: 105px;
+                height: 110px;
+                background-image: url(../img/procent.png);
+            }
+            span {
+                display: block;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin: 0 auto 23px;
+                @media (max-width: 800px) {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
